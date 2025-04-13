@@ -1,0 +1,347 @@
+
+body {
+    background-color: #000000 !important;
+    color: #ffffff;
+    scroll-behavior: smooth; 
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #fff;
+    /* padding: 50px; */
+    text-align: center;
+    animation: fadeIn 2s ease-in-out; /* Başlık için kademeli animasyon */
+}
+
+header h1{
+    margin-top: 6%;
+}
+
+.hh{
+    width: 30%;
+}
+
+
+header img{
+    width: 15%;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 10;
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-toggler {
+      z-index: 11;
+    }
+  }
+  
+
+.navozellik{
+    display: flex !important;
+    justify-content: center !important;
+    background-color: #2f0000!important;
+    padding: 10px !important;
+    top: 0;
+
+}
+.navozellik a {
+    color: #fff !important;
+   
+    text-decoration: none !important;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out; 
+    
+}
+.navozellik a:hover {
+    background-color: #580000 !important;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2f0000;
+    padding: 10px;
+    
+    top: 0;
+}
+nav a {
+    color: #fff !important;
+    padding: 14px 20px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out; 
+    
+}
+nav a:hover {
+    background-color: #580000 !important;
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+.container li{
+    text-align: justify;
+}
+.section {
+    padding: 60px 0;
+    transform: translateY(50px);
+    animation: slideUp 1s forwards; 
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    display: flex;
+    
+    
+}
+.section1 {
+    padding: 60px 0;
+    transform: translateY(50px);
+    animation: slideUp 1s forwards; 
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+   
+    
+}
+
+
+.section img{
+   width: auto;
+   height: 300px;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2); /*gölge*/
+    
+    margin: 20px;
+}
+.about{
+    width: 40%;
+    margin: 20px;
+}
+
+
+.slider-container {
+    width: 100%; 
+    
+    overflow: hidden; 
+    position: relative;
+    
+    margin: auto;
+}
+
+/* Fotoğrafların bulunduğu slider */
+.slider {
+    display: flex;
+    width: calc(400px * 10); /* Fotoğraf sayısına göre genişlik */
+    animation: slide 20s linear infinite, fadeInOut 20s ease-in-out infinite; /* Kayma + Parlama ve Solma Animasyonu */
+}
+
+/* Fotoğraflar */
+.slider img {
+    width: 400px; 
+    height: 300px; 
+    object-fit: cover; 
+}
+
+/* Sürekli kaydırma animasyonu */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-3200px); /* Tüm fotoğrafların toplam genişliği */
+    }
+}
+
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0; 
+    }
+    10% {
+        opacity: 1; 
+    }
+    90% {
+        opacity: 1; 
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
+.container-custom {
+    margin-top: 30px;
+}
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.info-box {
+    border-left: 6px solid #680000; 
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2);}
+
+
+
+
+h1, h2, h3, h4 {
+    color: #ffffff;
+}
+
+footer {
+    background-color: #2f0000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    
+    
+}
+
+.img2{
+        margin-bottom: 5px;
+        height: 38px;
+        width: 38px;}
+        
+    
+
+.contact-form {
+    background-color: #232222;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.contact-form input, .contact-form textarea {
+    width: 97%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+.contact-form button {
+    background-color: #570000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.contact-form button:hover {
+    background-color: #790000;
+}
+
+
+
+
+.dropdown a{
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2f0000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    border-radius: 4px; 
+}
+
+.dropdown-content a {
+    color: white !important; 
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px; 
+
+.dropdown-content a:hover {
+    background-color: #580000;
+ 
+}}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+@keyframes fadeIn {/*opaklıkta görünürlüğe geçer*/
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideUp { /*açılışta yukarı kayar*/
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes float {
+    0% {
+        transform: translateY(0); /* Başlangıç konumu */
+    }
+    50% {
+        transform: translateY(-10px); /* Yukarı hareket */
+    }
+    100% {
+        transform: translateY(0); /* Son konum */
+    }
+}
+
+
+
+
+
+
+.oto-card {
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2);
+    transform: scale(0.9);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* Tıklanabilir göstermek için */
+    
+}
+
+
+.oto-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.3);
+}
+
+.oto-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Görselin kart içerisine sığması için */
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
